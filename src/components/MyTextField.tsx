@@ -11,6 +11,7 @@ const MyTextField = ({
   inputProps,
   control,
   children,
+  success,
 }: ITextField) => {
   return (
     <FormControl fullWidth sx={{ mb: "1rem" }}>
@@ -21,6 +22,8 @@ const MyTextField = ({
           <TextField
             {...field}
             id={id}
+            color={success ? "success" : "primary"}
+            focused={success}
             placeholder={placeholder}
             required
             variant="outlined"
