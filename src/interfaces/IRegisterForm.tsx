@@ -5,4 +5,6 @@ export interface IRegisterForm {
   address: string;
   loanAmount: number;
   phoneNumber: string;
+  loanTerm: number;
+  dateOfBirth: object;
 }

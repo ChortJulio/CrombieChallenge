@@ -12,4 +12,5 @@ export interface ITextField {
   error: boolean;
   helperText: string;
   children?: React.ReactNode;
+  success: boolean;
 }
